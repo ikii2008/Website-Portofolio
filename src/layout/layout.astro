@@ -1,0 +1,35 @@
+---
+import "../styles/global.css";
+import Navbar from "../components/navbar.astro";
+const { title = "Portofolio Wiki Dwi Saputra" } = Astro.props;
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="/icon.png" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body
+    class="bg-slate-950 text-slate-100 min-h-screen flex flex-col font-sans"
+  >
+    <Navbar />
+
+    <script>
+      import { initApp } from "../script/main.js";
+
+      initApp();
+
+      document.addEventListener("astro:page-load", initApp);
+    </script>
+
+    <slot />
+  </body>
+</html>
