@@ -208,7 +208,7 @@ function terminal() {
 
         switch (command) {
             case 'help':
-                terminalOutput.innerHTML += `<div class="text-emerald-300">Command yang tersedia: help, whoami, clear, ls, cat</div>`;
+                terminalOutput.innerHTML += `<div class="text-emerald-300">Command yang tersedia: help, whoami, clear</div>`;
             break;
             case 'whoami':
                 terminalOutput.innerHTML += `<div class="text-emerald-300">Network & Cybersecurity Enthusiast.</div>`;
@@ -216,7 +216,7 @@ function terminal() {
             case 'clear':
                 terminalOutput.innerHTML = '';
             break;
-            case 'ls':
+            /*case 'ls':
                 const fileList = Object.keys(files).join('&nbsp;&nbsp;&nbsp;&nbsp;');
                 terminalOutput.innerHTML += `<div class="text-emerald-300">${fileList || 'Tidak ada file'}</div>`;
             break;
@@ -229,7 +229,7 @@ function terminal() {
                 } else {
                     terminalOutput.innerHTML += `<div class="text-red-400">cat: ${fileName}: File tidak ditemukan</div>`;
                 }
-            break;
+            break;*/
             default:
             if (command !== '') {
                 terminalOutput.innerHTML += `<div class="text-red-400">Command '${command}' tidak ditemukan. Ketik 'help'.</div>`;
