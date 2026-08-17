@@ -2,57 +2,55 @@
 import Layout from "../layout/layout.astro";
 ---
 
-<html lang="en">
-  <Layout title="Achievement">
-    <main class="flex flex-col items-start justify-start w-full gap-2 ml-0">
-      <div
-        class="flex items-center justify-center p-8 w-[570px] h-[30px] bg-slate-900/50 border-b border-slate-800 text-sky-400 font-mono font-bold tracking-wider text-xl uppercase"
-      >
-        [ ACHIEVEMENT ]
-      </div>
-      <div class="flex flex-col items-start gap-4 max-w-xl p-8">
-        <button
-          data-src="/cert/lks-2026.jpg"
-          class="cert-btn inline-block bg-slate-900/80 text-cyan-400 text-[15px] px-3 py-1 rounded-full border border-slate-700 cursor-pointer hover:border-cyan-400 hover:text-cyan-300 hover:scale-103"
-        >
-          Juara 2 LKS SMK bidang Cybersecurity tingkat Kabupaten Cilacap - 2026
-        </button>
-        <button
-          data-src="/cert/lks-2025.jpg"
-          class="cert-btn inline-block bg-slate-900/80 text-cyan-400 text-[15px] px-3 py-1 rounded-full border border-slate-700 cursor-pointer hover:border-cyan-400 hover:text-cyan-300 hover:scale-103"
-        >
-          Juara 2 LKS SMK bidang Cybersecurity tingkat Kabupaten Cilacap - 2025
-        </button>
-        <button
-          data-src="/cert/siswa-berprestasi.jpg"
-          class="cert-btn inline-block bg-slate-900/80 text-cyan-400 text-[15px] px-3 py-1 rounded-full border border-slate-700 cursor-pointer hover:border-cyan-400 hover:text-cyan-300 hover:scale-103"
-        >
-          Siswa Berprestasi SMK Tamtama 1 Sidareja - 2026
-        </button>
-      </div>
-    </main>
+<Layout title="Achievement">
+  <main class="flex flex-col items-start justify-start w-full gap-2 ml-0">
     <div
-      class="self-start absolute right-[0px] bg-gray-950/80 w-[730px] min-h-screen pt-16 flex items-center justify-center border-l border-slate-800"
+      class="flex items-center justify-center p-8 w-[570px] h-[30px] bg-slate-900/50 border-b border-slate-800 text-sky-400 font-mono font-bold tracking-wider text-xl uppercase"
     >
-      <div id="placeholder-text" class="text-slate-500 font-mono text-sm">
-        [ Pilih item di sebelah kiri untuk melihat sertifikat ]
-      </div>
-      <div
-        id="loading-spinner"
-        class="hidden absolute flex flex-col items-center gap-3"
-      >
-        <div
-          class="animate-spin rounded-full h-10 w-10 border-b-2 border-cyan-400"
-        >
-        </div>
-        <div class="text-slate-500 font-mono text-xs">Memuat Gambar...</div>
-      </div>
-      <img
-        id="preview-image"
-        src=""
-        alt="Preview Sertifikat"
-        class="hidden rounded-lg shadow-2xl border border-slate-800 object-contain transition-all"
-      />
+      [ ACHIEVEMENT ]
     </div>
-  </Layout>
-</html>
+    <div class="flex flex-col items-start gap-4 max-w-xl p-8">
+      <button
+        data-src="/cert/lks-2026.jpg"
+        class="cert-btn inline-block bg-slate-900/80 text-cyan-400 text-[15px] px-3 py-1 rounded-full border border-slate-700 cursor-pointer hover:border-cyan-400 hover:text-cyan-300 hover:scale-103"
+      >
+        Juara 2 LKS SMK bidang Cybersecurity tingkat Kabupaten Cilacap - 2026
+      </button>
+      <button
+        data-src="/cert/lks-2025.jpg"
+        class="cert-btn inline-block bg-slate-900/80 text-cyan-400 text-[15px] px-3 py-1 rounded-full border border-slate-700 cursor-pointer hover:border-cyan-400 hover:text-cyan-300 hover:scale-103"
+      >
+        Juara 2 LKS SMK bidang Cybersecurity tingkat Kabupaten Cilacap - 2025
+      </button>
+      <button
+        data-src="/cert/siswa-berprestasi.jpg"
+        class="cert-btn inline-block bg-slate-900/80 text-cyan-400 text-[15px] px-3 py-1 rounded-full border border-slate-700 cursor-pointer hover:border-cyan-400 hover:text-cyan-300 hover:scale-103"
+      >
+        Siswa Berprestasi SMK Tamtama 1 Sidareja - 2026
+      </button>
+    </div>
+  </main>
+  <div
+    class="self-start absolute right-[0px] bg-gray-950/80 w-[730px] min-h-screen pt-16 flex items-center justify-center border-l border-slate-800"
+  >
+    <div id="placeholder-text" class="text-slate-500 font-mono text-sm">
+      [ Pilih item di sebelah kiri untuk melihat sertifikat ]
+    </div>
+    <div
+      id="loading-spinner"
+      class="hidden absolute flex flex-col items-center gap-3"
+    >
+      <div
+        class="animate-spin rounded-full h-10 w-10 border-b-2 border-cyan-400"
+      >
+      </div>
+      <div class="text-slate-500 font-mono text-xs">Memuat Gambar...</div>
+    </div>
+    <img
+      id="preview-image"
+      src=""
+      alt="Preview Sertifikat"
+      class="hidden rounded-lg shadow-2xl border border-slate-800 object-contain transition-all"
+    />
+  </div>
+</Layout>

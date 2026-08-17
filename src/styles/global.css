@@ -1,1 +1,8 @@
 @import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+.hljs {
+  background: transparent !important;
+  border: none !important;
+  padding: 0 !important;
+}
